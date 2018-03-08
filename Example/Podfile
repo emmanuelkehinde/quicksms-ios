@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QuickSms_Example' do
+  pod 'QuickSms', :path => '../'
+
+  target 'QuickSms_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

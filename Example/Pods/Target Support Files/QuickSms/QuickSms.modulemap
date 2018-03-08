@@ -1,0 +1,6 @@
+framework module QuickSms {
+  umbrella header "QuickSms-umbrella.h"
+
+  export *
+  module * { export * }
+}

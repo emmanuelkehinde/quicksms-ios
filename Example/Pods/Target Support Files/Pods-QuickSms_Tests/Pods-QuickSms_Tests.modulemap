@@ -1,0 +1,6 @@
+framework module Pods_QuickSms_Tests {
+  umbrella header "Pods-QuickSms_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
