@@ -54,14 +54,14 @@ sms.recipient = "08000000000"
 Using the `sms` instance as an argument
 
 ```swift
-quickSms?.sendSms(sms: sms).addOnCompleteListener(handler: { (res, err) in
-if res != nil {
-print(res!.totalNumberOfSmsCreditsUsed)
-print(res!.messageId)
-}
-if err != nil {
-print(err!.message)
-}
+quickSms.sendSms(sms: sms).addOnCompleteListener(handler: { (res, err) in
+    if res != nil {
+        print(res!.totalNumberOfSmsCreditsUsed)
+        print(res!.messageId)
+    }
+    if err != nil {
+        print(err!.message)
+    }
 })
 ```
 
@@ -74,7 +74,7 @@ sms.recipient = "08000000000,08000000001,08000000002"
 ```
 
 ##### To specify to deliver to DND numbers
-```java
+```swift
 var sms = Sms()
 ...
 ...
@@ -91,13 +91,13 @@ sms.schedule = "2018-10-01 12:30:00"
 
 ### Check Account Balance
 ```swift
-quickSms?.getAccountBalance().addOnCompleteListener(handler: { (res, err) in
-if res != nil {
-print(res!.balance)
-}
-if err != nil {
-print(err!.message)
-}
+quickSms.getAccountBalance().addOnCompleteListener(handler: { (res, err) in
+    if res != nil {
+        print(res!.balance)
+    }
+    if err != nil {
+        print(err!.message)
+    }
 })
 ```
 
@@ -106,13 +106,13 @@ print(err!.message)
 Using `messageID` as an argument
 
 ```swift
-quickSms?.getDeliveryReport(messageId: "54765").addOnCompleteListener(handler: { (res, err) in
-if res != nil {
-print(res!.status)
-}
-if err != nil {
-print(err!.message)
-}
+quickSms.getDeliveryReport(messageId: "54765").addOnCompleteListener(handler: { (res, err) in
+    if res != nil {
+        print(res!.status)
+    }
+    if err != nil {
+        print(err!.message)
+    }
 })
 ```
 
