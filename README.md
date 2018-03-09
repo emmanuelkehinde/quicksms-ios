@@ -51,7 +51,7 @@ sms.message = "This is just a test"
 sms.recipient = "08000000000"
 ```
 
-Using the `sms` instance as an argument
+Passing the `sms` instance as an argument
 
 ```swift
 quickSms.sendSms(sms: sms).addOnCompleteListener(handler: { (res, err) in
@@ -103,7 +103,7 @@ quickSms.getAccountBalance().addOnCompleteListener(handler: { (res, err) in
 
 ### Get Delivery Report
 
-Using `messageID` as an argument
+Passing `messageId` as argument
 
 ```swift
 quickSms.getDeliveryReport(messageId: "54765").addOnCompleteListener(handler: { (res, err) in
